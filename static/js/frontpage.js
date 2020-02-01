@@ -1,10 +1,12 @@
+something = document.getElementById("hidden");
+console.log("here:", something)
+something.value = "REEEEE";
 
 var sliderArray = {"range1": "output1",
-                    "range2": "output2",
-                    "range3": "output3",
-                    "range4": "output4",
-                    "range5": "output5"}
-console.log(sliderArray);
+"range2": "output2",
+"range3": "output3",
+"range4": "output4",
+"range5": "output5"}
 
 var genres = ["alt-rock", "alternative", "ambient",
 "anime", "blues", "bossanova", "children", "chill",
@@ -25,29 +27,33 @@ var genres = ["alt-rock", "alternative", "ambient",
 
 
 function updateSliderValues() {
-  for (var sliderID in sliderArray) {
+for (var sliderID in sliderArray) {
 
-    var slider = document.getElementById(sliderID);
-    var output = document.getElementById(sliderArray[sliderID]);
-    output.innerHTML = slider.value;
-  }
+var slider = document.getElementById(sliderID);
+var output = document.getElementById(sliderArray[sliderID]);
+output.innerHTML = slider.value;
+}
 }
 
 function updateDropdown(html_object) {
-  topDropdown = document.getElementById("select-button");
-  topDropdown.innerHTML = html_object.innerHTML;
+topDropdown = document.getElementById("select-button");
+topDropdown.innerHTML = html_object.innerHTML;
+
+something = document.getElementById("hidden");
+console.log(something)
+something.value = html_object.innerHTML;
 }
 
 genres.forEach(populateDropdown);
 function populateDropdown(item) {
-  dropdown_text = document.getElementById("dropdown-text");
-  option = document.createElement("BUTTON");
-  option.classList.add("dropdown-item");
-  option.type = "button";
-  option.onclick = function() { updateDropdown(this)};
-  option.innerHTML = item;
+dropdown_text = document.getElementById("dropdown-text");
+option = document.createElement("BUTTON");
+option.classList.add("dropdown-item");
+option.type = "button";
+option.onclick = function() { updateDropdown(this)};
+option.innerHTML = item;
 
-  dropdown_text.appendChild(option)
+dropdown_text.appendChild(option)
 
 
 
