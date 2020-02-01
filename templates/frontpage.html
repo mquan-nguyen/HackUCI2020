@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/frontpage.css') }}">
+
+
+
+
+
+  <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Welcome to Hack UCI 2020</h1>
+    <div class="slider-card">
+
+        <!-- the sliders-->
+        <form method="POST">
+          <div class="col-lg border border-success">
+
+            <div class="slider">
+              <label>Danceability: <span id="output1"></span></label>
+              <input name="danceability" type="range" class="custom-range" min="0" max="100" id="range1" oninput="updateSliderValues()">
+            </div>
+    
+            <div class="slider">
+              <label>Energy: <span id="output2"></span></label>
+              <input name="energy" type="range" class="custom-range" min="0" max="100" id="range2" oninput="updateSliderValues()">
+            </div>
+
+            <div class="slider">
+              <label>Instrumentalness: <span id="output3"></span></label>
+              <input name="instrumentalness" type="range" class="custom-range" min="0" max="100" id="range3" oninput="updateSliderValues()">
+            </div>
+
+            <div class="slider">
+              <label>Tempo: <span id="output4"></span></label>
+              <input name="tempo" type="range" class="custom-range" min="50" max="200" id="range4" oninput="updateSliderValues()">
+            </div>
+
+            <div class="slider">
+              <label>Valence: <span id="output5"></span></label>
+              <input name="valence" type="range" class="custom-range" min="0" max="100" id="range5" oninput="updateSliderValues()">
+            </div>
+
+          
+            <!--GENRE DROPDOWN-->
+            <div class="dropdown text-center">
+                <button name="genre" id="select-button" class="btn btn-secondary dropdown-toggle" type="button" data-boundary="viewport" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Select Genre Here
+                </button>
+                <div id="dropdown-text" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <button class="dropdown-item" type="button" onclick="updateDropdown(this)">GENRE HERE</button>
+
+
+
+                </div>
+            </div>
+
+            <button class="btn btn-success btn-block" type="submit">Submit</button>
+          </div>
+        </form>
+
+    </div>
+
+
+    <script onload="updateSliderValues()" src=" {{ url_for ('static',filename='js/frontpage.js') }}"></script>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
