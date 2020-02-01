@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="something.css">
+    <link rel="stylesheet" href="frontpage.css">
 
 
 
@@ -19,36 +19,34 @@
   <body>
     <h1>Hello, world!</h1>
     
-    <div class="container">
+    <div class="slider-card">
 
         <!-- the sliders-->
         <div class="col-lg border border-success">
           <div class="slider">
             <label>INSERT VARIABLE HERE: <span id="output1"></span></label>
-            <input type="range" class="custom-range" min="0" max="100" id="range1" oninput="updateValues()">
+            <input type="range" class="custom-range" min="0" max="100" id="range1" oninput="updateSliderValues()">
           </div>
   
           <div class="slider">
             <label>INSERT VARIABLE HERE: <span id="output2"></span></label>
-            <input type="range" class="custom-range" min="0" max="100" id="range2" oninput="updateValues()">
+            <input type="range" class="custom-range" min="0" max="100" id="range2" oninput="updateSliderValues()">
           </div>
 
-          <div class="dropdown">
+        <div class="dropdown text-center">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Dropdown button
             </button>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <button class="dropdown-item" type="button" onclick="updateDropdown()">GENRE HERE</button>
             </div>
             </div>
         </div>
 
-
     </div>
 
-    <script onload="updateValues()" src="something.js"></script>
+
+    <script onload="updateSliderValues()" src="frontpage.js"></script>
 
 
 
