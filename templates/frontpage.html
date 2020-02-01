@@ -10,66 +10,80 @@
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/frontpage.css') }}">
 
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
 
 
-
-
-  <title>Hello, world!</title>
+  <title>Specify for Spotify</title>
   </head>
   <body>
-    <h1>Welcome to Hack UCI 2020</h1>
+    <!-- icon + title -->
+    <div class="text-center">    
+      <h1>Specify for Spotify</h1>
+      <img src="{{ url_for('static', filename='img/spotifyicon.png') }}" height="100" width="100">
+    </div>
+
     <div class="slider-card">
 
         <!-- the sliders-->
         <form method="POST">
-          <div class="col-lg border border-success">
+          <div class="col-lg border border-success rounded">
 
             <div class="slider">
-              <label>Danceability: <span id="output1"></span></label>
+              <label data-toggle="tooltip" data-placement="right" title="Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. ">Danceability: <span id="output1"></span></label>
               <input name="danceability" type="range" class="custom-range" min="0" max="100" id="range1" oninput="updateSliderValues()">
             </div>
     
             <div class="slider">
-              <label>Energy: <span id="output2"></span></label>
+              <label data-toggle="tooltip" data-placement="right" title="Energy represents the intensity and activity of a song.">Energy: <span id="output2"></span></label>
               <input name="energy" type="range" class="custom-range" min="0" max="100" id="range2" oninput="updateSliderValues()">
             </div>
 
             <div class="slider">
-              <label>Instrumentalness: <span id="output3"></span></label>
+              <label data-toggle="tooltip" data-placement="right" title="Instrumentalness predicts whether a track contains no vocals.">Instrumentalness: <span id="output3"></span></label>
               <input name="instrumentalness" type="range" class="custom-range" min="0" max="100" id="range3" oninput="updateSliderValues()">
             </div>
 
             <div class="slider">
-              <label>Tempo: <span id="output4"></span></label>
+              <label data-toggle="tooltip" data-placement="right" title="Tempo is the BPM of a track.">Tempo: <span id="output4"></span></label>
               <input name="tempo" type="range" class="custom-range" min="50" max="200" id="range4" oninput="updateSliderValues()">
             </div>
 
             <div class="slider">
-              <label>Valence: <span id="output5"></span></label>
+              <label data-toggle="tooltip" data-placement="right" title="Valence describes the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful), where tracks with low valence sound more negative (e.g. sad, angry).">Valence: <span id="output5"></span></label>
               <input name="valence" type="range" class="custom-range" min="0" max="100" id="range5" oninput="updateSliderValues()">
             </div>
 
           
             <!--GENRE DROPDOWN-->
-            <div class="dropdown text-center">
+            <div class="dropdown text-center" style="margin-bottom: .3rem">
                 <button id="select-button" class="btn btn-secondary dropdown-toggle" type="button" data-boundary="viewport" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Select Genre Here
                 </button>
                 <input class="hidden" name="genre" id="hidden"></input>
                 <div id="dropdown-text" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                  <button class="dropdown-item" type="button" onclick="updateDropdown(this)">GENRE HERE</button>
-
-
-
+                  <!--Dropdown options generated in js-->
                 </div>
             </div>
-
-            <button class="btn btn-success btn-block" type="submit">Submit</button>
+            <div class="text-center"> <button class="btn btn-success" type="submit">Submit</button> </div>
           </div>
         </form>
 
     </div>
 
+    <div id="bottom-right">
+    <h3>Made at Hack UCI 2020</h3>
+    <img src="{{ url_for('static', filename='img/hackicon.png') }}" height="50" width="50">
+    </div>
 
     <script onload="updateSliderValues()" src=" {{ url_for ('static',filename='js/frontpage.js') }}"></script>
 
@@ -78,10 +92,6 @@
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 </html>

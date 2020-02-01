@@ -8,20 +8,20 @@ var sliderArray = {"range1": "output1",
 "range4": "output4",
 "range5": "output5"}
 
-var genres = ["alt-rock", "alternative", "ambient",
-"anime", "blues", "bossanova", "children", "chill",
-"classical", "club", "country", "dance", "deep-house",
-"disco", "disney", "dubstep", "edm", "electro", "electronic",
-"folk", "funk", "groove", "guitar", "happy", "hardcore",
-"heavy-metal", "hip-hop", "holidays", "house",
-"indie", "indie-pop", "j-dance", "j-pop", "j-rock",
-"jazz", "k-pop", "kids", "latin", "metal", "metalcore",
-"new-release", "opera", "party", "piano",
-"pop", "punk", "punk-rock", "r-n-b", "rainy-day",
-"reggae", "road-trip", "rock", "rock-n-roll",
-"romance", "sad", "salsa", "sleep", "soul", "spanish",
-"study", "summer", "synth-pop", "tango", "techno",
-"trance", "work-out"]
+var genres = ["Alt-rock", "Alternative", "Ambient",
+"Anime", "Blues", "Bossanova", "Children", "Chill",
+"Classical", "Club", "Country", "Dance", "Deep-house",
+"Disco", "Disney", "Dubstep", "EDM", "Electro", "Electronic",
+"Folk", "Funk", "Groove", "Guitar", "Happy", "Hardcore",
+"Heavy-metal", "Hip-hop", "Holidays", "House",
+"Indie", "Jndie-pop", "J-dance", "J-pop", "J-rock",
+"Jazz", "K-pop", "Kids", "Latin", "Metal", "Metalcore",
+"New-release", "Opera", "Party", "Piano",
+"Pop", "Punk", "Punk-rock", "R-n-B", "Rainy-day",
+"Reggae", "Road-trip", "Rock", "Rock-n-roll",
+"Romance", "Sad", "Salsa", "Sleep", "Soul", "Spanish",
+"Study", "Summer", "Synth-pop", "Tango", "Techno",
+"Trance", "Work-out"]
 
 // Update the current slider value (each time you drag the slider handle)
 
@@ -41,7 +41,7 @@ topDropdown.innerHTML = html_object.innerHTML;
 
 something = document.getElementById("hidden");
 console.log(something)
-something.value = html_object.innerHTML;
+something.value = html_object.innerHTML.toLowerCase();
 }
 
 genres.forEach(populateDropdown);

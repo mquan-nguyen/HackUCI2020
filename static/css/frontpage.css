@@ -9,7 +9,9 @@ div.slider-card {
 }
 
 h1 {
-    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: inline;
 }
 
 body {
@@ -18,7 +20,7 @@ body {
 }
 
 label {
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 html {
@@ -32,4 +34,30 @@ html {
 
  #hidden {
     display: none;
+}
+
+label:hover {
+    color: #585858;
+}
+
+#bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+h3 {
+    display: inline;
+}
+
+img {
+    margin-bottom: .5rem;
+}
+
+.border {
+    border-width: 5px!important;
+}
+
+.rounded {
+    border-radius:1rem!important;
 }

@@ -33,7 +33,7 @@ def results():
                                 target_energy=energy, target_instrumentalness=instru,
                                 target_valence=valence, target_tempo=tempo)
 
-    return render_template("test.html", tracks=tracks)
+    return render_template("test.html"  , tracks=tracks)
 
 
 if __name__ == "__main__":
