@@ -1,4 +1,5 @@
 from flask import Flask, redirect, url_for, render_template, request
+
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
@@ -28,7 +29,7 @@ def results():
     print(float(instru) / 100)
     print(float(valence) / 100)
     print(int(tempo))
-    tracks = sp.recommendations(seed_genres=["country"], limit=100, target_danceability=dance,
+    tracks = sp.recommendations(seed_genres=[genre], limit=100, target_danceability=dance,
                                 target_energy=energy, target_instrumentalness=instru,
                                 target_valence=valence, target_tempo=tempo)
 
