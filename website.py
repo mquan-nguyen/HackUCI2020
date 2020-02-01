@@ -19,7 +19,6 @@ def home():
 @app.route("/", methods=['POST'])
 def results():
     genre = request.form['genre']
-    print("genre")
     dance = request.form['danceability']
     energy = request.form['energy']
     instru = request.form['instrumentalness']
