@@ -1,5 +1,6 @@
 # HackUCI2020 Project - Specify for Spotify
 *Built by Omar Yu, Matthew Nguyen, Derek Skinner, and Kevin Zheng*
+
 This project was built during HackUCI 2020, from January 31 - February 2.
 
 Specify for Spotify allows users to search in a much more precise way than normal, by allowing them to
