@@ -73,3 +73,19 @@ img {
 #made-in {
     animation-duration: 2s;
 }
+
+input[type="range" i] {
+    color: black!important;
+}
+
+.custom-range::-webkit-slider-thumb {
+    background: green;
+  }
+  
+  .custom-range::-moz-range-thumb {
+    background: green;
+  }
+  
+  .custom-range::-ms-thumb {
+    background: green;
+  }
