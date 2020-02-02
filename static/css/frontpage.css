@@ -1,3 +1,7 @@
+@font-face {
+    font-family: , Helvetica, sans-serif
+}
+
 div.slider-card {
     width: 60%;
     margin: auto;
@@ -9,11 +13,20 @@ div.slider-card {
 }
 
 h1 {
+<<<<<<< HEAD
     margin-bottom: 1rem;
     font-weight:850;
     font-family: "proxima-nova-bold";
     font-size:300%;
 
+=======
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: inline;
+    font-family: "Arial";
+    font-weight: bold;
+    color: #1ed760
+>>>>>>> e5db887f524807de3f0e57966621388354163678
 }
 
 body {
