@@ -37,5 +37,6 @@ def results():
 
     return redirect("https://open.spotify.com/playlist/" + url)
 
+
 if __name__ == "__main__":
     app.run()
