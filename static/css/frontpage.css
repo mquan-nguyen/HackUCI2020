@@ -1,3 +1,7 @@
+@font-face {
+    font-family: , Helvetica, sans-serif
+}
+
 div.slider-card {
     width: 60%;
     margin: auto;
@@ -9,14 +13,28 @@ div.slider-card {
 }
 
 h1 {
+<<<<<<< HEAD
+    margin-bottom: 1rem;
+    font-weight:850;
+    font-family: "proxima-nova-bold";
+    font-size:300%;
+
+=======
     margin-bottom: 2rem;
     margin-top: 2rem;
     display: inline;
+    font-family: "Arial";
+    font-weight: bold;
+    color: #1ed760
+>>>>>>> e5db887f524807de3f0e57966621388354163678
 }
 
 body {
     color: #FFFFFF;
-    background-color: #181818;
+    background-image: url(/static/img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "proxima-nova";
 }
 
 label {
@@ -48,10 +66,7 @@ label:hover {
 
 h3 {
     display: inline;
-}
-
-img {
-    margin-bottom: .5rem;
+    font-size: larger;
 }
 
 .border {
@@ -62,9 +77,6 @@ img {
     border-radius:1rem!important;
 }
 
-#title-background {
-    background-image: linear-gradient(#383838,#181818)
-}
 
 .fadeInUp{
     animation-duration: 1.5s!important;
@@ -74,18 +86,37 @@ img {
     animation-duration: 2s;
 }
 
-input[type="range" i] {
-    color: black!important;
-}
 
 .custom-range::-webkit-slider-thumb {
-    background: green;
+    background: #1db954;
   }
   
   .custom-range::-moz-range-thumb {
-    background: green;
+    background: #1db954;
   }
   
   .custom-range::-ms-thumb {
-    background: green;
+    background: #1db954;
   }
+
+  #hack-img {
+      opacity: .9;
+  }
+
+  #select-button {
+      margin-bottom: .15rem;
+  }
+
+  .custom-range {
+      margin-bottom: .5rem;
+  }
+
+  @font-face {
+      font-family: proxima-nova;
+      src: url(/static/fonts/proxima-nova-regular-webfont.ttf)
+  }
+
+  @font-face {
+    font-family: proxima-nova-bold;
+    src: url(/static/fonts/proxima-nova-bold-webfont.ttf)
+}

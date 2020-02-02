@@ -1,3 +1,4 @@
+
 from flask import Flask, redirect, render_template, request
 import createtest
 import spotipy
@@ -36,6 +37,7 @@ def results():
     url = createtest.create(tracks, genre)
 
     return redirect("https://open.spotify.com/playlist/" + url)
+
 
 if __name__ == "__main__":
     app.run()

@@ -17,6 +17,7 @@ def create(tracks, genre):
 
     newplist = sp.user_playlist_create(user=username, name=genre.capitalize())
 
+
     playlist = []
     for track in tracks['tracks']:
         playlist.append(track['uri'])
