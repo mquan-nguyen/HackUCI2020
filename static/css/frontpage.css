@@ -9,14 +9,19 @@ div.slider-card {
 }
 
 h1 {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    display: inline;
+    margin-bottom: 1rem;
+    font-weight:850;
+    font-family: "proxima-nova-bold";
+    font-size:300%;
+
 }
 
 body {
     color: #FFFFFF;
-    background-color: #181818;
+    background-image: url(/static/img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "proxima-nova";
 }
 
 label {
@@ -48,11 +53,7 @@ label:hover {
 
 h3 {
     display: inline;
-    color: #787878;
-}
-
-img {
-    margin-bottom: .5rem;
+    font-size: larger;
 }
 
 .border {
@@ -63,9 +64,6 @@ img {
     border-radius:1rem!important;
 }
 
-#title-background {
-    background-image: linear-gradient(#383838,#181818)
-}
 
 .fadeInUp{
     animation-duration: 1.5s!important;
@@ -89,7 +87,7 @@ img {
   }
 
   #hack-img {
-      opacity: .5;
+      opacity: .9;
   }
 
   #select-button {
@@ -99,3 +97,13 @@ img {
   .custom-range {
       margin-bottom: .5rem;
   }
+
+  @font-face {
+      font-family: proxima-nova;
+      src: url(/static/fonts/proxima-nova-regular-webfont.ttf)
+  }
+
+  @font-face {
+    font-family: proxima-nova-bold;
+    src: url(/static/fonts/proxima-nova-bold-webfont.ttf)
+}
