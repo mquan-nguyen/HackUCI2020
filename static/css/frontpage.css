@@ -9,16 +9,18 @@ div.slider-card {
 }
 
 h1 {
-    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: inline;
 }
 
 body {
-    background-color: #191414;
     color: #FFFFFF;
+    background-color: #181818;
 }
 
 label {
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 html {
@@ -33,3 +35,57 @@ html {
  #hidden {
     display: none;
 }
+
+label:hover {
+    color: #585858;
+}
+
+#bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+h3 {
+    display: inline;
+}
+
+img {
+    margin-bottom: .5rem;
+}
+
+.border {
+    border-width: 5px!important;
+}
+
+.rounded {
+    border-radius:1rem!important;
+}
+
+#title-background {
+    background-image: linear-gradient(#383838,#181818)
+}
+
+.fadeInUp{
+    animation-duration: 1.5s!important;
+}
+
+#made-in {
+    animation-duration: 2s;
+}
+
+input[type="range" i] {
+    color: black!important;
+}
+
+.custom-range::-webkit-slider-thumb {
+    background: green;
+  }
+  
+  .custom-range::-moz-range-thumb {
+    background: green;
+  }
+  
+  .custom-range::-ms-thumb {
+    background: green;
+  }
