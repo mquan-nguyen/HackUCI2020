@@ -15,7 +15,7 @@ def create(tracks, genre):
     sp = spotipy.Spotify(auth=token)
     sp.trace = False
 
-    newplist = sp.user_playlist_create(user=username, name=genre)
+    newplist = sp.user_playlist_create(user=username, name=genre.capitalize())
 
     playlist = []
     for track in tracks['tracks']:
