@@ -55,6 +55,7 @@ label:hover {
 
 h3 {
     display: inline;
+    color: #787878;
 }
 
 img {
@@ -81,18 +82,27 @@ img {
     animation-duration: 2s;
 }
 
-input[type="range" i] {
-    color: black!important;
-}
 
 .custom-range::-webkit-slider-thumb {
-    background: green;
+    background: #1db954;
   }
   
   .custom-range::-moz-range-thumb {
-    background: green;
+    background: #1db954;
   }
   
   .custom-range::-ms-thumb {
-    background: green;
+    background: #1db954;
+  }
+
+  #hack-img {
+      opacity: .5;
+  }
+
+  #select-button {
+      margin-bottom: .15rem;
+  }
+
+  .custom-range {
+      margin-bottom: .5rem;
   }
