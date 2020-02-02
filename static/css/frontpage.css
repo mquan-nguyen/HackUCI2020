@@ -1,3 +1,7 @@
+@font-face {
+    font-family: , Helvetica, sans-serif
+}
+
 div.slider-card {
     width: 60%;
     margin: auto;
@@ -12,6 +16,9 @@ h1 {
     margin-bottom: 2rem;
     margin-top: 2rem;
     display: inline;
+    font-family: "Arial";
+    font-weight: bold;
+    color: #1ed760
 }
 
 body {
