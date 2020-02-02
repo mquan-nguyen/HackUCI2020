@@ -1,6 +1,5 @@
 something = document.getElementById("hidden");
 console.log("here:", something)
-something.value = "REEEEE";
 
 var sliderArray = {"range1": "output1",
 "range2": "output2",
@@ -58,3 +57,21 @@ dropdown_text.appendChild(option)
 
 
 }
+
+function validateForm() {
+    console.log("VALIDATING...")
+  var x = document.forms[0]["genre"].value;
+  if (x == "") {
+    alert("You must pick a genre!");
+    return false;
+  }
+}
+
+$(document).ready(function() {
+    //option A
+    $("form").submit(function(e){
+        if (validateForm() == false) {
+            e.preventDefault(e);
+        }
+    });
+});

@@ -15,8 +15,8 @@ h1 {
 }
 
 body {
-    background-color: #191414;
     color: #FFFFFF;
+    background-color: #181818;
 }
 
 label {
@@ -60,4 +60,16 @@ img {
 
 .rounded {
     border-radius:1rem!important;
+}
+
+#title-background {
+    background-image: linear-gradient(#383838,#181818)
+}
+
+.fadeInUp{
+    animation-duration: 1.5s!important;
+}
+
+#made-in {
+    animation-duration: 2s;
 }
